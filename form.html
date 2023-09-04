@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        h1{
+            color: pink;
+            text-align: center;
+            /*margin: auto;*/
+        }
+        h3{
+            color: black;
+            text-align: center;
+            /*margin: auto;*/
+        }
+        form{
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+            width: fit-content;
+            padding: 25px;
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+            margin: auto;
+        }
+        input{
+            width: 350px;
+            padding: 10px;
+            border: 1px solid rgb(194, 194, 194);
+            border-radius: 4px;
+        }
+        input[type=submit]:hover{
+            background-color: #04aa6d ;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .container{
+            border-radius: 4px;
+            background-color: dimgrey;
+            padding: 20px;
+        }
+        select{
+            padding:12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(https://wallpaperaccess.com/full/39610.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        </style>
+   <h1>ENTER THE UNIVERSE</h1> 
+   <div class="form">
+     <form action="signin.html"> 
+        <h2><i>Login</i></h2><br>
+        <label for="uname">Universe Name:</label><br>
+        <input type="text" name="en" placeholder="Enter Name"><br><br>
+
+        <label for="uno">Universe Number:</label><br>
+        <input type="number" name="un" placeholder="Universe NO " required><br><br>
+
+        <label for="uc">Enter Code:</label><br>
+        <input type="password" name="ps" placeholder="Universe Code" required><br><br>
+
+        <label for="pn">Choose Planet Name:</label><br>
+        <select name="planet" id="Planet">
+            <option value="choose">planets</option>
+            <option value="01">Mercury</option>
+            <option value="02">Venus</option>
+            <option value="03">Earth</option>
+            <option value="04">Mars</option>
+            <option value="05">Jupiter</option>
+            <option value="06">Saturn</option>
+            <option value="07">Uranus</option>
+            <option value="08">Others</option>
+        </select> <br><br>
+        <input type="submit" value="Into World">
+    </form>
+    <h3><i>or</i></h3>
+    <form action="create.html"> <input type="submit" value="Create acctount"> </form>
+</body>
+</html>
